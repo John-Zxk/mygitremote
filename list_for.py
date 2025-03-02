@@ -92,3 +92,34 @@ print(numbers)
 numbers = [value ** 3 for value in range(1, 11)]
 print(numbers)
 
+# 练习 4.10：切片
+my_foods = ['pizza', 'falafel', 'carrot cake', 'charles', 'martina', 'michael', 'florence', 'eli']
+print("The first three items in the list are:", my_foods[0:3])
+print("The item  from the middle of the list are:", my_foods[2:5])
+print("The last three items in the list are:", my_foods[-3:])
+
+# 练习 4.11：你的比萨，我的比萨
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+my_foods.append('apple')
+friend_foods.append('banana')
+print("My favorite pizzas are:")
+for food in my_foods:
+    print(food, end=" ")
+print("\nMy friend's favorite pizzas are:")
+for food in friend_foods:
+    print(food, end=" ")
+
+# 练习 4.12：使用多个循环
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print("My favorite foods are:")
+print(my_foods)
+for food in my_foods:
+    print(food)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+for food in friend_foods:
+    print(food)
