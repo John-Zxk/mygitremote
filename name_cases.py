@@ -23,6 +23,7 @@ print(famous_person.lstrip())
 print(famous_person.strip())
 
 
-
+# comment
 filename = "python_notes.txt"
 print(filename.removesuffix(".txt"))
+
